@@ -1,39 +1,46 @@
-*{
+* {
   margin: 0;
 }
 
-body{
-background-color: #f5f6fa;  
+body {
+  background-color: #f5f6fa;
 }
 
-.app{
+.app {
   display: flex;
   justify-content: space-evenly;
   padding: 20px;
 }
 
-.app_dropdown{
+.app_dropdown {
   background-color: white;
-
 }
 
-.app_header{
+.app_header {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
   justify-content: space-between;
 }
 
-.app_header > h1{
+.app_header h1 {
   color: #fc3c3c;
-  font-size: 2rem;
+  font-size: 2.1rem;
+  margin-right: 470px;
 }
 
-.app_Left{
-  flex:0.9;
+.app_Left {
+  flex: 0.9;
 }
 
-.app_right{
+.app_header img {
+  display: flex;
+  height: 50px;
+  width: 50px;
+ 
+}
+
+.app_right {
   display: flex;
   flex-direction: column;
 }
@@ -44,35 +51,64 @@ background-color: #f5f6fa;
   flex-grow: 1;
 }
 
-.app_graph{
+.app_graph {
   flex-grow: 1;
 }
 
-.app_graphTitle{
-    margin-top: 20px;
-    margin-bottom: 20px;
+.app_graphTitle {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.app_stats{
+.app_stats {
   display: flex;
   justify-content: space-between;
 }
 
-@media (max-width:990px){
-  .app{
+@media (max-width: 990px) {
+  .app {
     flex-direction: column;
+    margin-bottom: 4px;
+  }
+  .app_stats {
+    flex-direction: column;
+    margin-top: 32px;
+  }
+  .app_header h1 {
+    color: steelblue;
+    margin-top: 2px;
+    margin-right: 60px;
+  }
+
+  .app_header img {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2px;
+  }
+  .container {
+    margin-top: 1055px;
+  }
+  .app_footer {
+    font-size: small;
+    margin-bottom: 15px;
   }
 }
 
+.container {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.app_footer {
+  position: absolute;
+  margin-top: 755px;
+  z-index: 2222;
+  font-size: small;
+  background-color: white;
+  font-family: serif;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.app_footer a {
+  color: #000;
+}

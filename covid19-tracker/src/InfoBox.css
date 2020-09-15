@@ -1,6 +1,9 @@
 .infoBox{
     flex: 1;
     cursor: pointer;
+    transition: all 0.6s ease !important;
+    box-shadow: 12px 12px 12px 1px rgba(0, 0, 255, .2) !important; 
+    overflow: hidden;
 }
 
 .infoBox:not(:last-child){
@@ -33,3 +36,4 @@
     margin-top: 15px !important;
 
 }
+
